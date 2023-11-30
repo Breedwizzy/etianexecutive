@@ -45,13 +45,24 @@ body {
 	/* position: fixed; */
 	top: 0px; /* Adjust the top position as needed */
 	right: 10px; /* Adjust the right position as needed */
-	position: relative; /* Allows for positioning within its container */
-	margin: 10px; /* Adjust margin as needed for spacing around the logo */
-	padding: 5px; /* Adjust padding as needed for spacing within the logo container */
-	width: 250px; /* You can adjust the width as needed */
+	/* position: relative; Allows for positioning within its container */
+	margin: 4px; /* Adjust margin as needed for spacing around the logo */
+	padding: 2px; /* Adjust padding as needed for spacing within the logo container */
+	width: 200px; /* You can adjust the width as needed */
 	height: auto; /* Maintain aspect ratio */
-	display: inline-block;
+	display: inline;
+	margin-left: 20px;
 }
+
+
+
+.whats-set-us-apart{
+	display: inline-block; /* Make the container inline-block to center it */
+    text-align: center; /* Left-align text within the container */
+	padding: 50px;
+}
+
+
 
 
 
@@ -62,7 +73,7 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: -1; /* Place the overlay image behind the content */
-	opacity: 0.5; /* Set the transparency of the overlay image */
+	opacity: 0.2; /* Set the transparency of the overlay image */
 }
 
 ol, ul {
@@ -223,6 +234,7 @@ input, select, textarea {
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
 	}
+
 
 /* Container */
 
@@ -1993,45 +2005,45 @@ input, select, textarea {
 
 /* Nav */
 
-	#nav {
+	/* #nav {
 		position: absolute;
 		right: 15%;
 		top: 30px;
 		font-size: 1em;
 		
-	}
+	} */
 
 		#nav ul {
-			position: relative;
+			/* position: relative;
 			left: 40px;
 			list-style: none;
 			bottom: 30px;
 			padding-left: 0;
 			display: inline-block;
-			top: 10px; /* Adjust the top position to match the logo */
+			top: 10px; Adjust the top position to match the logo */
 		
 		}
 
 			#nav ul li {
-				float: left;
+				/* float: left;
 				line-height: 4.5em;
-				padding-left: 1.5em;
+				padding-left: 1.5em; */
 			}
 
 				#nav ul li a, #nav ul li span {
-					-moz-transition: background-color .25s ease-in-out;
+					/* -moz-transition: background-color .25s ease-in-out;
 					-webkit-transition: background-color .25s ease-in-out;
 					-ms-transition: background-color .25s ease-in-out;
 					transition: background-color .25s ease-in-out;
-					font-weight: 800;
+					font-weight: 800; */
 					/* letter-spacing: 0.025em; */
-					color: #333;
+					/* color: #333;
 					text-decoration: none;
-					border-radius: 6px;
+					border-radius: 6px; */
 					/* padding: 0.5em 1em 0.5em 1em; */
 				}
 
-				#nav ul li > ul {
+				/* #nav ul li > ul {
 					display: none;
 				}
 
@@ -2046,7 +2058,7 @@ input, select, textarea {
 				#nav ul li.current a {
 					background: #444;
 					color: #fff;
-				}
+				} */
 
 	/* .dropotron {
 		background: #fff;
@@ -2110,6 +2122,25 @@ input, select, textarea {
 			} */
 
 /* Banner */
+
+
+
+/* Updated CSS for hover effect */
+.nav-item:hover .nav-link {
+    color: #fff;  /* Change to the desired hover color */
+    background-color: #afa7a7;  /* Change to the desired hover background color */
+    border: 3px solid #ccc;  /* Add border to the hover effect */
+	border-radius: 5px; 
+}
+
+/* Updated CSS for active (clicked) effect */
+.nav-item.active .nav-link {
+    color: #fff;  /* Change to the desired active color */
+    background-color: #007bff;  /* Change to the desired active background color */
+    border: 1px solid #ccc;  /* Add border to the active effect */
+}
+
+
 
 
 .flyer-video{
@@ -2219,9 +2250,9 @@ input, select, textarea {
 
 /* Medium */
 
-	#navPanel, #navToggle {
+	/* #navPanel, #navToggle {
 		display: none;
-	}
+	} */
 
 	@media screen and (max-width: 980px) {
 
@@ -2255,51 +2286,52 @@ input, select, textarea {
 
 		/* Menu */
 
-			ul.menu li {
+			/* ul.menu li {
 				display: block;
 				border: 0 !important;
 				padding: 0 !important;
 				margin: 0 !important;
-			}
+			} */
 
 		/* Actions */
 
-			ul.actions li {
+			/* ul.actions li {
 				display: block;
 				padding: 0;
 				margin: 1em 0 0 0;
-			}
+			} */
 
-				ul.actions li:first-child {
+				/* ul.actions li:first-child {
 					margin-top: 0;
-				}
+				} */
 
 		/* Button */
 
 			input[type="button"],
 			input[type="submit"],
 			input[type="reset"],
-			button,
+			button:not(.navbar-toggler),
 			.button {
 				width: 100%;
 				text-align: center;
 				font-size: 1.35em;
 				padding: 0.85em 0 !important;
 			}
+		
 
-				input[type="button"].icon,
-				input[type="submit"].icon,
-				input[type="reset"].icon,
-				button.icon,
-				.button.icon {
+				input[type="button"].icon:not(.navbar-toggler),
+				input[type="submit"].icon:not(.navbar-toggler),
+				input[type="reset"].icon:not(.navbar-toggler),
+				button.icon:not(.navbar-toggler),
+				.button.icon:not(.navbar-toggler) {
 					padding-right: 0.75em !important;
 				}
 
-					input[type="button"].icon:before,
-					input[type="submit"].icon:before,
-					input[type="reset"].icon:before,
-					button.icon:before,
-					.button.icon:before {
+					input[type="button"].icon:not(.navbar-toggler):before,
+					input[type="submit"].icon:not(.navbar-toggler):before,
+					input[type="reset"].icon:not(.navbar-toggler):before,
+					button.icon:not(.navbar-toggler):before,
+					.button.icon:not(.navbar-toggler):before {
 						margin-right: 0.5em;
 						top: 0.05em;
 					}
@@ -2404,15 +2436,15 @@ input, select, textarea {
 				width: 100%;
 				z-index: 10001;
 			}
-
+/* 
 				#navToggle .toggle {
 					text-decoration: none;
 					width: 70px;
 					height: 50px;
 					opacity: 0.35;
-				}
+				} */
 
-					#navToggle .toggle:before {
+					/* #navToggle .toggle:before {
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
 						display: inline-block;
@@ -2423,9 +2455,9 @@ input, select, textarea {
 						text-transform: none !important;
 						font-family: 'Font Awesome 5 Free';
 						font-weight: 900;
-					}
+					} */
 
-					#navToggle .toggle:before {
+					/* #navToggle .toggle:before {
 						display: inline-block;
 						text-decoration: none;
 						position: absolute;
@@ -2444,7 +2476,7 @@ input, select, textarea {
 
 					#navToggle .toggle:active {
 						opacity: 0.75;
-					}
+					} */
 
 			#navPanel {
 				-moz-backface-visibility: hidden;
@@ -2597,27 +2629,28 @@ input, select, textarea {
 			input[type="button"],
 			input[type="submit"],
 			input[type="reset"],
-			button,
+			button:not(.navbar-toggler),
 			.button {
 				width: 100%;
 				text-align: center;
-				font-size: 1.25em !important;
-				padding: 0.65em 0 !important;
+				font-size: 1.35em;
+				padding: 0.85em 0 !important;
 			}
+			
 
-				input[type="button"].icon,
-				input[type="submit"].icon,
-				input[type="reset"].icon,
-				button.icon,
-				.button.icon {
+				input[type="button"].icon:not(.navbar-toggler),
+				input[type="submit"].icon:not(.navbar-toggler),
+				input[type="reset"].icon:not(.navbar-toggler),
+				button.icon:not(.navbar-toggler),
+				.button.icon:not(.navbar-toggler) {
 					padding-right: 0.75em !important;
 				}
 
-					input[type="button"].icon:before,
-					input[type="submit"].icon:before,
-					input[type="reset"].icon:before,
-					button.icon:before,
-					.button.icon:before {
+					input[type="button"].icon:not(.navbar-toggler):before,
+					input[type="submit"].icon:not(.navbar-toggler):before,
+					input[type="reset"].icon:not(.navbar-toggler):before,
+					button.icon:not(.navbar-toggler):before,
+					.button.icon:not(.navbar-toggler):before {
 						margin-right: 0.5em;
 						top: 0.05em;
 					}
@@ -2745,3 +2778,5 @@ input, select, textarea {
 			}
 
 	}
+
+

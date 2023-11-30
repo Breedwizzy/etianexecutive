@@ -10,17 +10,21 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link rel="icon" href="images/beatmotionlogo.jpg" type="image/jpeg">
 	</head>
 	<body class="is-preload homepage">
 
-		<img class="overlay-image" src="images/dj-theme.jpg" alt="Overlay Image">
+		<img class="overlay-image" src="images/deepback.jpg" alt="Overlay Image">
+		<img class="overlay-image" src="images/systemback.jpg" alt="Overlay Image">
+
 		<div id="page-wrapper">
 
 			
 
 			<!-- Header -->
 				<div id="header-wrapper">
+					
 					<header id="header" class="container">
 
 						<!-- Logo -->
@@ -28,36 +32,65 @@
 								<h1><a href="index.html">Beatsmotions</a></h1>
 								<span>by HTML5 UP</span>
 							</div> -->
-						<img class="beatmotionlogo" src="images/beatmotionlogo.jpg" alt="logo Image">
-
 						<!-- Nav -->
-							<nav id="nav" style="padding-left: 70px;">
-								<ul>
-									<li class="current"><a href="index.html">Home</a></li>
-									<li>
-										<a href="About-Us.html">About Us</a>
+						<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light border rounded">
+							<a href="index.html">
+								<img class="beatmotionlogo" src="images/beatmotionlogo.jpg" alt="logo Image">
+							</a>
+							<button type="button"
+								style="background-color: rgb(165, 152, 152);"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarNav"
+								class="navbar-toggler btn-sm"
+								aria-controls="navbarNav"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav ms-auto" style="padding-right: 40px;">
+									<li class="nav-item">
+										<a href="index.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Home</a>
 									</li>
-									<li><a href="djservices.html">Dj Services</a></li>
-									<li><a href="eventmanagement.html">Event Management</a></li>
-									<li><a href="eventmanagement.html">Up Comming Events</a></li>
-									<li><a href="contactus.html">Contact US</a></li>
+									<li class="nav-item">
+										<a href="About-Us.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">About Us</a>
+									</li>
+									<li class="nav-item">
+										<a href="djservices.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Dj Services</a>
+									</li>
+									<li class="nav-item">
+										<a href="eventmanagement.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Event Management</a>
+									</li>
+									<li class="nav-item">
+										<a href="upcommingevents.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Our Events</a>
+									</li>
+									<li class="nav-item">
+										<a href="contactus.html" class="nav-link" style="text-decoration: none; color: inherit; white-space: nowrap;">Contact US</a>
+									</li>
 								</ul>
-							</nav>
+							</div>
+						
+							
+						</nav>
 
 					</header>
 				</div>
-
-			
+		
 
 					<!-- Main wrapper -->
+					<br>
+					<br>
 
-					<div style="padding-left: 40px; padding-right: 40px;" id="main-wrapper">
+				<div style="padding-left: 40px; padding-right: 40px;" id="main-wrapper">
 						<h2>Contact Us</h2>
-						<article>
-							uuuuuuuu
-
-						</article>
-
+						<div class="box container bg-light border rounded" id="text-container-about">
+							<span>
+								<strong>
+									info@beatsmotionproductions.com
+								</strong>
+							</span>
+						</div>
 						<!-- Footer -->
 				<div id="footer-wrapper">
 					<footer id="footer" class="container">
@@ -149,6 +182,7 @@
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
