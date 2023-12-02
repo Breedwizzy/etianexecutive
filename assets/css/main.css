@@ -48,7 +48,7 @@ body {
 	/* position: relative; Allows for positioning within its container */
 	margin: 4px; /* Adjust margin as needed for spacing around the logo */
 	padding: 2px; /* Adjust padding as needed for spacing within the logo container */
-	width: 200px; /* You can adjust the width as needed */
+	width: 100px; /* You can adjust the width as needed */
 	height: auto; /* Maintain aspect ratio */
 	display: inline;
 	margin-left: 20px;
