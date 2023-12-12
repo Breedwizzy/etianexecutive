@@ -1848,6 +1848,8 @@ input, select, textarea {
 			.box.feature .image {
 				position: relative;
 				margin: 0;
+				height: 100%;
+				width: 100%;
 			}
 
 				.box.feature .image img {
@@ -1896,10 +1898,12 @@ input, select, textarea {
 
 	.widget.thumbnails .grid {
 		margin: 0 0 3em 0;
+		height: 100%;
 	}
 
-	.widget.thumbnails .image {
+	.widget.thumbnails .grid .row {
 		margin: 0;
+		height: 100%;
 	}
 
 	.widget.contact ul {
@@ -2678,6 +2682,7 @@ input, select, textarea {
 					.box.feature .image {
 						position: relative;
 						margin: 0;
+						height: 100%;
 					}
 
 						.box.feature .image img {
@@ -2687,9 +2692,14 @@ input, select, textarea {
 
 		/* Widgets */
 
-			.widget.thumbnails .image {
-				margin: 0;
+			.widget.thumbnails .grid .row{
+				height: 100%;
 			}
+
+			/* .widget.thumbnails .image {
+				margin: 0;
+				height: 100%;
+			} */
 
 			.widget.thumbnails .x {
 				padding: 1em 0.5em 0 0;
