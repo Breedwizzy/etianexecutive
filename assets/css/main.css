@@ -64,6 +64,12 @@ body {
 
 
 
+.event-management-paragraph{
+	font-size: 18px;
+	line-height: 1.6;
+	
+}
+
 
 
 .overlay-image {
@@ -101,6 +107,12 @@ body {
 mark {
 	background-color: transparent;
 	color: inherit;
+}
+
+.dj-paragraph{
+	font-size: 18px;
+	line-height: 1.6;
+
 }
 
 input::-moz-focus-inner {
