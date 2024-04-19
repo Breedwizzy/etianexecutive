@@ -2176,6 +2176,7 @@ input, select, textarea {
 .flyerbanner{
 	position: relative;
 	padding: 4.5em;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/djreal.jpg);
 }
 
 	#banner {
