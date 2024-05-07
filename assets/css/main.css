@@ -71,6 +71,10 @@ body {
 }
 
 
+#banner-wrapper{
+	margin-top: 70px;
+}
+
 
 .overlay-image {
 	position: absolute;
@@ -1525,7 +1529,7 @@ input, select, textarea {
 	}
 
 	header {
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 	}
 
 		header h2, header h3 {
@@ -2182,6 +2186,7 @@ input, select, textarea {
 	#banner {
 		position: relative;
 		padding: 4.5em;
+
 	}
 
 		#banner h2 {
@@ -2734,6 +2739,7 @@ input, select, textarea {
 
 			#banner-wrapper {
 				padding: 0 15px 0 15px;
+				margin-top: 40px;
 			}
 
 			#features-wrapper {

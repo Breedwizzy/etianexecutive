@@ -20,6 +20,7 @@
 		<meta name="twitter:description" content="Dj and Event Management">
 		<meta name="twitter:image" content="https://beatsmotionproductions.com/images/beatmotionlogo.jpg">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/beatmotionlogo.jpg"/>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	</head>
 	<body class="is-preload homepage">
@@ -30,88 +31,125 @@
 		<div id="page-wrapper">
 
 			
-
-			<!-- Header -->
-				<div id="header-wrapper">
+	<!-- Header -->
+	<div id="header-wrapper">
 					
-					<header id="header" class="container">
+		<header id="header" class="container">
 
-						<!-- Logo -->
-							<!-- <div id="logo">
-								<h1><a href="index.html">Beatsmotions</a></h1>
-								<span>by HTML5 UP</span>
-							</div> -->
-						<!-- Nav -->
-						<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light border rounded">
-							<a href="index.html">
-								<img class="beatmotionlogo" src="images/beatmotionlogo.jpg" alt="logo Image">
-							</a>
-							<button type="button"
-								style="background-color: rgb(165, 152, 152);"
-								data-bs-toggle="collapse"
-								data-bs-target="#navbarNav"
-								class="navbar-toggler btn-sm"
-								aria-controls="navbarNav"
-								aria-expanded="false"
-								aria-label="Toggle navigation"
-							>
-								<span class="navbar-toggler-icon"></span>
-							</button>
-							<div class="collapse navbar-collapse" id="navbarNav">
-								<ul class="navbar-nav ms-auto" style="padding-right: 80px; ">
-									<li class="nav-item">
-										<a href="index.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Home</a>
-									</li>
-									<li class="nav-item">
-										<a href="About-Us.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">About Us</a>
-									</li>
-									<li class="nav-item">
-										<a href="djservices.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Dj Services</a>
-									</li>
-									<li class="nav-item">
-										<a href="eventmanagement.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Event Management</a>
-									</li>
-									<li class="nav-item">
-										<a href="upcommingevents.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Our Events</a>
-									</li>
-									<li class="nav-item">
-										<a href="contactus.html" class="nav-link" style="text-decoration: none; color: inherit; white-space: nowrap;">Contact US</a>
-									</li>
-								</ul>
-							</div>
-						
-							
-						</nav>
+			
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-light border rounded">
+				<a href="index.html">
+					<img class="beatmotionlogo" src="images/beatmotionlogo.jpg" alt="logo Image">
+				</a>
 
-					</header>
+				<style>
+					.navbar.fixed-top {
+						z-index: 99999; /* Set a high z-index value */
+					}
+				</style>
+				<button type="button"
+					style="background-color: rgb(165, 152, 152);"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					class="navbar-toggler btn-sm"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto" style="padding-right: 40px;">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="About-Us.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a href="djservices.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Dj Services</a>
+						</li>
+						<li class="nav-item">
+							<a href="eventmanagement.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Event Management</a>
+						</li>
+						<li class="nav-item">
+							<a href="upcommingevents.html" class="nav-link" style="text-decoration: none; color: inherit; margin-right: 10px; white-space: nowrap;">Our Events</a>
+						</li>
+						<li class="nav-item">
+							<a href="contactus.html" class="nav-link" style="text-decoration: none; color: inherit; white-space: nowrap;">Contact US</a>
+						</li>
+					</ul>
 				</div>
+			
+				
+			</nav>
 
-
-
+		</header>
+	</div>
 
 
 									<!-- Carosel -->
-
-								<style>
-					#carousel
-					.carousel-item {
-						height: 32rem;
-						background: #777;
-						position: relative; /* Add position: relative */
-						z-index: 1; /* Set a higher z-index */
-					}
-
-					.container {
-						position: relative; /* Add position: relative */
-						z-index: 1; /* Set a higher z-index than .carousel-item */
-					}
-				</style>
-
-				<div id="carousel" class="carousel-item active">
-					<div class="container">
-						<h1>Beatsmotionproductions</h1>
-					</div>
-				</div>
+									<style>
+										.carousel-item {
+											height: 35rem;
+											background: #777;
+											position: relative;
+											/* margin-top: -35px; */
+											color: whitesmoke;
+											/* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/ttable.PNG); */
+											z-index: 999; /* Set a higher z-index to ensure it appears above other elements */
+										}
+									
+										.container-carousel {
+											position: relative;
+											z-index: 10000; /* Set a higher z-index than #carousel to ensure its content is visible */
+										}
+									
+										#banner-wrapper,
+										#main-wrapper {
+											position: relative; /* Add position: relative to other sections */
+											z-index: 1; /* Ensure other elements stay below */
+										}
+									
+										.container {
+											display: flex;
+											flex-direction: column;
+											justify-content: flex-end;
+											height: 100%;
+										}
+									
+										.container h1 {
+											text-align: center;
+										}
+									
+										@media screen and (max-width: 768px) {
+											/* Adjust the margin-top to shift the carousel down */
+											#carousel {
+												margin-top: 10px; /* Adjust as needed */
+												margin-bottom: 20px;
+											}
+										}
+									</style>
+									
+									<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div id="inner-carousel" class="carousel-item active" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/event.PNG);">
+												<div class="container">
+													<h1>Embark on the Ultimate Event Planning Adventure</h1>
+													<h1>with Our Services</h1>
+												</div>
+											</div>
+										
+											<div id="inner-carousel" class="carousel-item active" style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/ttable.PNG);">
+												<div class="container">
+													<h1>Beatsmotionproduction.</h1>
+													<h1>Experience a supreme Entertainment Journey</h1>
+													<h1>with Our DJ Services</h1>
+												</div>
+											</div>
+										</div>
+									</div>
+									
 
 
 
@@ -158,12 +196,14 @@
 	
 								
 										<section class="box feature">
-											<a href="#" class="image featured"><img src="images/afrofusion27april.PNG" alt="" /></a>
+											<a href="#" class="image featured"><img src="images/afro25may.PNG" alt="" /></a>
 											<br>
 											<!-- <a href="#" class="image featured"><img src="images/beativentt222.jpg" alt="" /></a> -->
 											<h2 style="padding-left: 20px; text-align: center;">Up Coming Events</h2>
-											<a href="https://www.eventbrite.com/e/red-and-white-dance-party-all-about-love-tickets-792733125117" style="text-align: center;" class="button medium icon solid fa-arrow-circle-right d-md-none">Book A Ticket</a>
-											<a href="https://www.eventbrite.com/e/red-and-white-dance-party-all-about-love-tickets-792733125117" style="text-align: center;" class="button large icon solid fa-arrow-circle-right d-none d-md-block">Book A Ticket</a>											<!-- <div class="inner">
+											<!-- <a href="https://www.eventbrite.com/e/red-and-white-dance-party-all-about-love-tickets-792733125117" style="text-align: center;" class="button medium icon solid fa-arrow-circle-right d-md-none">Book A Ticket</a> -->
+											<!-- <a href="https://www.eventbrite.com/e/red-and-white-dance-party-all-about-love-tickets-792733125117" style="text-align: center;" class="button large icon solid fa-arrow-circle-right d-none d-md-block">Book A Ticket</a>											 -->
+											
+											<!-- <div class="inner">
 												<header>
 													<h2>Beats on Motion</h2>
 													<p>Groove alive, heartbeat of sound</p>
