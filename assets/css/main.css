@@ -63,6 +63,13 @@ body {
 }
 
 
+
+
+#mid-section{
+	margin-top: 30px;	
+}
+
+
 .mid-image {
 	height: 400px;
 	width: 400px;
@@ -2813,5 +2820,3 @@ input, select, textarea {
 			}
 
 	}
-
-
