@@ -54,6 +54,21 @@ body {
 	margin-left: 20px;
 }
 
+.after-herosec {
+    font-size: 2.5rem; /* Large font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    margin-bottom: 2rem; /* Add some spacing below the text */
+    color: #333; /* Adjust the color if needed */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .after-herosec {
+        font-size: 1.75rem; /* Slightly smaller on mobile devices */
+        margin-bottom: 1.5rem; /* Adjust spacing for mobile */
+    }
+}
 
 
 .whats-set-us-apart{
